@@ -4,16 +4,16 @@ These instructions can work for almost any STM32 device. We will use the `STM32H
 
 ## Design & Architecture
 
-TODO: Insrt Picture Here or point to another markdown file
+TODO: Insert Picture Here or point to another markdown file
 
 ## Details
 
-These are step by step instructions on how to create your own project with your own board/MCU. Hopefully, it provides 
+These are step by step instructions on how to create your own project with your own board/MCU. Hopefully, it provides a general overview of what to for your MCU or board
 
 * Create a git-repo or use an existing one
 * Create a submodule -- we use the name of the board for project directory STM32H747I-DISCO. This directory name can be anything you want including the root of the repo. At the root of the repo, do the following
 
-    `git submodule add https://github.com/cypresssemiconductorco/wifi-host-driver.git STM32H747I-DISCO/Middlewares/Third_Party/Cypress-WIFI/WHD`
+    `git submodule add --force https://github.com/cypresssemiconductorco/wifi-host-driver.git STM32H747I-DISCO/Middlewares/Third_Party/Cypress-WIFI/WHD`
 
 * Start the STM32CubeMX application
   * Create a project for said board (or MCU)
