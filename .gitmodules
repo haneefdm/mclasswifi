@@ -1,0 +1,4 @@
+[submodule "STM32H747I-DISCO/Middlewares/Third_Party/Cypress-WIFI/WHD"]
+	path = STM32H747I-DISCO/Middlewares/Third_Party/Cypress-WIFI/WHD
+	url = https://github.com/cypresssemiconductorco/wifi-host-driver.git
+  
