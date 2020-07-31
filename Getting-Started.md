@@ -20,7 +20,11 @@ These are step by step instructions on how to create your own project with your 
   * When asked to initiliazed all peripherals, answer yes (this may take a while if you have not used this board before)
   * In "Pinout & Configuration" make sure SDMMC1 is enabled
   * From Middleware section, you depending on the MCU, you may have one or more processors. Select which processor you want to host the WiFi communications
-    * Enable FreeRTOS
-    * Enable LwIP (optional but you will need some IP stack)
+    * Enable and configure FreeRTOS for the processor. We used the latest version (CMSIS_V2) as of this writing
+    * Enable and configure LwIP for the processor (optional but you will need some IP stack)
+      * TODO: **Under "Platform Settings" LWIP asks for a BSP Component driver. This can be a problem**
   * Enable/Disable any other peripherals, middleware you need
   * Save the project in the `STM32H747I-DISCO` directory. If asked if it is okay to overrite, please answer YES. The project (ioc) file should be alongside the `Middlewares`
+  * In STM32CubeMX switch to `Project Manager` tab and select your IDE/Makefile project of choice
+    * TODO: If you see warning wrt. LWIP or FreeRTOS, please continue
+  * 
